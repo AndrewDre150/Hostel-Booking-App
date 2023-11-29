@@ -121,7 +121,7 @@ const HomePage = () => {
           return (
             <div className="card" key={hostel.id}>
               <img
-                src={imageUrl}
+                src={hostel.image}
                 alt={`Hostel ${hostel.hostel_name}`}
                 className="card-img-top"
               />
@@ -132,7 +132,7 @@ const HomePage = () => {
                 <p>
                   <span className="locate">Location:</span> {hostel.location}
                 </p>
-                <p className="card-title">Price: {hostel.price}</p>
+                <p className="card-title">Price: ${hostel.price}</p>
                 <div className="row">
                   <div className="col-6">
                     <Link to={{ pathname: `/book/${hostel.id}`, state: { hostel } }}>
