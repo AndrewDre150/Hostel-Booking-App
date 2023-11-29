@@ -1,0 +1,277 @@
+
+.bg-custom-color {
+  background-color: #264653;
+}
+.container{
+  /* display: flex; */
+  margin: 10px 40px;
+}
+.card-container:hover{
+    transform: scale(1.025);
+    border: none;
+    box-shadow: 0 4px 8px rgba(33, 226, 114, 0.2);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(136, 160, 255, 0.46) 217.91%);
+}
+
+/* FAQS */
+
+.faqs{
+  margin-top: 30px;
+}
+
+
+/* Hero Section */
+.button-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+
+/* Booking form */
+.booking-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(212, 237, 250);
+}
+
+.booking-section {
+  border: 1px solid #000;
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.grouped{
+  display: flex;
+  gap: 10px;
+  padding: 10px 12px;
+}
+.grouped input{
+  border-radius: 5px;
+}
+.grouped1{
+  display: flex;
+  gap: 10px;
+  padding: 10px 12px;
+ 
+}
+.grouped1 input{
+  border-radius: 5px;
+  width: 50%;
+}
+/* .grouped select{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border: 1px solid grey;
+  border-radius: 5px;
+} */
+.grouped select{
+  border-radius: 5px;
+}
+.confirm{
+  margin-top: 10px;
+}
+.confirm input{
+  border-radius: 4px;
+  margin-right: 10px;
+}
+.headers{
+  margin: 10px 0;
+  padding: 2px
+}
+.headers hr{
+  border: 0.5px solid rgb(185, 182, 182);
+}
+
+/* Contact us */
+.forminputs input{
+  width: 100%;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+.t-area textarea{
+  width: 100%;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+
+/* Navbar */
+.navbar-link:hover {
+  border-bottom: 2px solid #3182CE; /* Adjust the color and thickness as needed */
+}
+
+
+/* Placemapsearchbox */
+.pac-controls {
+  display: inline-block;
+  padding: 5px 11px;
+}
+
+.pac-controls label {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+#pac-input {
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  margin-top: 10px;
+  padding: 8px;
+  text-overflow: ellipsis;
+  width: 300px;
+}
+
+#pac-input:focus {
+  border-color: #4d90fe;
+}
+
+
+
+
+/* Room details CSS */
+.room-details {
+  display: flex;
+  flex-direction: row;
+  flex: 2;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+}
+
+.slideshow-container{
+    display: flex;
+    padding: 5px;
+
+  }
+  .room-image {
+    width: auto;
+    height: 87vh;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+
+.amenities {
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap to the next row */
+    justify-content: space-between; /* Distribute items evenly between columns */
+    width: 90%;
+    background-color: #65AEF2;
+    margin: 0 auto;
+  }
+  .emptyDiv{
+    display: flex;
+    flex: 1;
+  }
+  
+  .amenity {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    width: 45%; /* Set the width to approximately 50% for a two-column layout */
+    box-sizing: border-box; /* Ensure the margin is included in the width */
+  }
+  
+  .amenity span {
+    margin-left: 10px;
+  }
+  
+  .room-type,
+  .social-media {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    width: 45%; /* Set the width to approximately 50% for a two-column layout */
+    box-sizing: border-box; /* Ensure the margin is included in the width */
+  }
+  
+  .room-type span,
+  .social-media span {
+    margin-left: 10px;
+  }
+
+/* Room container css */
+.room-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 5px;
+    margin: 0;
+    width: 60%;
+    height: 87vh; 
+    
+}
+  
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+}
+
+p {
+  font-size: 16px;
+  color: #666;
+}
+
+.booknowButton {
+    background-color: #0000FF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    bottom: 10px; /* Push the button to the bottom */
+    margin: 0 auto;
+    margin-bottom: 8px;
+  }
+
+  @media (max-width: 768px) {
+    /* For screens with a maximum width of 768px, remove the flex layout and set width to 100% */
+    .room-type,
+    .social-media, .amenity, .slideshow-container, .room-container {
+      width: 100%; /* Set the width to 100% for a single column layout */
+    }
+  }
+
+
+
+  /* SignUp page */
+  .round-both{
+    /* margin-top: 5px; */
+    border: 1px solid gray;
+    /* padding: 1px; */
+    border-radius: 35px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 35%;
+    margin: 10px auto 0;
+  }
+
+/* Room details table */
+  .student-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .student-table td {
+    border: 1px solid #ddd; /* Add your preferred border color here */
+    padding: 8px;
+    text-align: left;
+  }

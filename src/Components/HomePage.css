@@ -1,0 +1,161 @@
+/* Grid container for cards */
+/* .card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 20px;
+  max-width: 1500px;
+  margin: 0 auto;
+  position: relative;
+} */
+
+/* Common styles for card elements */
+/* .card {
+  width: 22rem;
+  height: auto;
+  margin-left: 20px;
+  padding: 10px;
+  box-shadow: 0px 4px 60px 0px rgba(0, 52, 101, 0.25);
+  align-items: flex-start;
+  cursor: pointer;
+  margin: auto;
+  transition: all 300ms ease-in;
+}
+
+.card:hover {
+  transform: scale(1.025);
+  border: none;
+  box-shadow: 0 4px 8px rgba(33, 226, 114, 0.2);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(136, 160, 255, 0.46) 217.91%);
+} */
+
+/* Card image */
+/* .card-img-top {
+  border-radius: 15px;
+  width: 100%;
+  height: 50%;
+} */
+
+/* Card title */
+/* .card-title {
+  font-size: 20px;
+  font-weight: bold;
+} */
+
+/* Rating section */
+/* .rating {
+  margin-left: 10px;
+} */
+
+/* Custom button */
+/* .custom-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  width: 150px;
+  height: auto;
+  transition: transform 0.2s;
+}
+
+.custom-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.06);
+} */
+/* .star {
+  font-size: 1.5rem;
+  color: #0a0a0a;
+  cursor: pointer;
+  text-align: right;
+  margin-left: 10px;
+  padding: -2px;
+} */
+/* 
+.star:hover {
+  color: #f10f0f;
+}
+ */
+
+
+/* Grid container for cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Add some gap between cards */
+  padding: 20px;
+  max-width: 1500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Common styles for card elements */
+.card {
+  width: 22rem;
+  height: 450px; /* Increase the height of the card */
+  margin-left: 20px;
+  padding: 10px;
+  box-shadow: 0px 4px 60px 0px rgba(0, 52, 101, 0.25);
+  align-items: flex-start;
+  cursor: pointer;
+  margin: auto;
+  transition: all 300ms ease-in;
+  position: relative; /* Add position relative to the card */
+}
+
+.card:hover {
+  transform: scale(1.025);
+  box-shadow: 0 4px 8px rgba(33, 226, 114, 0.2);
+}
+
+/* Card image */
+.card-img-top {
+  border-radius: 15px;
+  width: 100%;
+  height: 60%; /* Adjust as needed */
+  object-fit: cover; /* Ensure images maintain their aspect ratio */
+}
+
+/* Card title */
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Rating section */
+.rating {
+  position: absolute; /* Position absolute to stay within the card */
+  bottom: 10px; /* Adjust as needed */
+  left: 10px; /* Adjust as needed */
+  display: flex;
+  align-items: center;
+}
+
+.star {
+  font-size: 1.5rem;
+  color: #0a0a0a;
+  cursor: pointer;
+  margin-right: 5px; /* Add margin between stars */
+}
+
+.star:hover {
+  color: #f10f0f;
+}
+
+/* Custom button */
+.custom-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  width: 150px;
+  height: auto;
+  margin-top: 10px; /* Add margin between button and rating section */
+  transition: transform 0.2s;
+}
+
+.custom-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.06);
+}
